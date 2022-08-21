@@ -1,0 +1,44 @@
+html {
+  font-size: 62.5%;
+}
+
+.testimonial-grid {
+  display: grid;
+  gap: 2rem;
+  font-size: 2rem;
+  padding-block: 4rem;
+  padding-inline: 4rem;
+  background-color: wheat;
+}
+
+.testimonial-grid > :nth-child(1) {
+  background-color: red;
+}
+
+.testimonial-grid > :nth-child(2) {
+  background-color: orange;
+}
+
+.testimonial-grid > :nth-child(3) {
+  background-color: green;
+}
+
+.testimonial-grid > :nth-child(4) {
+  background-color: blue;
+}
+
+.testimonial-grid > :nth-child(5) {
+  background-color: crimson;
+}
+
+.testimonial-grid > * {
+  opacity: 0.9;
+  min-height: 40rem;
+}
+
+
+@media (min-width: 40rem) {
+  .testimonial-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
